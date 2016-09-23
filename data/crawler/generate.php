@@ -12,7 +12,7 @@ $arquivo_processado = 'candidatos_dados_processados.json';
  * estado):
  * http://divulgacandcontas.tse.jus.br/divulga/rest/v1/eleicao/buscar/RJ/2/municipios
  */
-$codigo_cidade = 60011; // Rio de Janeiro - RJ
+$codigo_cidade = 70998; // São José dos Campos - SP
 $Cidade = new Cidade($codigo_cidade);
 
 // Apagar conteúdo sobre candidatos
