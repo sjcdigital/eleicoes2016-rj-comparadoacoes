@@ -14,14 +14,14 @@ class Candidato {
   }
 
   public function getDetalhes() {
-    $path = "$this->url_base/candidatura/buscar/2016/60011/2/candidato/";
+    $path = "$this->url_base/candidatura/buscar/2016/70998/2/candidato/";
     $json = file_get_contents($path . $this->id);
     return json_decode($json);
   }
 
   public function getCandidatura() {
     $cargo = 11; //Prefeito
-    $path = "$this->url_base/prestador/consulta/2/2016/60011/$cargo/";
+    $path = "$this->url_base/prestador/consulta/2/2016/70998/$cargo/";
     $path .= $this->detalhes->partido->numero . '/';
     $path .= $this->detalhes->partido->numero . '/';
     $path .= $this->id;
