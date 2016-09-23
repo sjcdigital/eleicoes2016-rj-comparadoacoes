@@ -1,0 +1,87 @@
+body {
+  padding-bottom: 20px;
+  background: #018a82;
+  font-family: 'Ubuntu', sans-serif; }
+
+h1 {
+  margin: 0;
+  text-align: center;
+  background: #32434e;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 10px 0;
+  text-transform: uppercase; }
+
+#candidatos {
+  padding: 30px 0; }
+  #candidatos figure {
+    text-align: center; }
+    @media only screen and (min-width: 640px) and (max-width: 979px) {
+      #candidatos figure {
+        padding-left: 5px;
+        padding-right: 5px; } }
+    @media only screen and (min-width: 980px) {
+      #candidatos figure {
+        width: 9%;
+        padding-left: 10px;
+        padding-right: 10px; } }
+    #candidatos figure img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #F7F7F7; }
+      @media only screen and (max-width: 639px) {
+        #candidatos figure img {
+          height: 130px; } }
+      @media only screen and (min-width: 640px) and (max-width: 979px) {
+        #candidatos figure img {
+          height: 90px; } }
+      @media only screen and (min-width: 980px) {
+        #candidatos figure img {
+          height: 90px; } }
+      #candidatos figure img:hover {
+        border-color: #F90; }
+    #candidatos figure h2 {
+      font-size: 1em;
+      font-weight: normal; }
+      @media only screen and (max-width: 979px) {
+        #candidatos figure h2 {
+          font-size: .8em;
+          height: 30px; } }
+    #candidatos figure.selecao img {
+      border-color: #F90; }
+    #candidatos figure.selecao h2 {
+      color: #fff; }
+
+#cards {
+  margin-top: 30px; }
+  #cards h2,
+  #cards h3 {
+    text-align: center;
+    margin: 0; }
+  #cards h2 {
+    margin: 0;
+    padding: 5px;
+    font-size: 1.4em;
+    color: #666;
+    background: #eee; }
+  #cards h3 {
+    padding: 5px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #666;
+    background: #eee; }
+
+.card {
+  background: #fff;
+  padding: 15px; }
+  .card .consolidado td,
+  .card td.valor {
+    text-align: right; }
+
+table {
+  width: 100%; }
+
+.well {
+  border-radius: 0;
+  border: none;
+  background: #f7f7f7; }
