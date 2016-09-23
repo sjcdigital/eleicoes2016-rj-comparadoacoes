@@ -2,6 +2,10 @@
   "name": "eleicoes2016-rj-comparadoacoes",
   "version": "0.0.1",
   "author": "Pedro Rocha <pedrogomesrocha@gmail.com>",
+  "scripts": {
+    "start": "./node_modules/.bin/gulp build && ./node_modules/.bin/gulp",
+    "deploy": "./node_modules/.bin/gulp build && ./node_modules/.bin/gulp deploy"
+  },
   "devDependencies": {
     "coffee-script": "^1.8.0",
     "gulp": "^3.8.10",

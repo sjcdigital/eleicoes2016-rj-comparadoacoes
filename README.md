@@ -10,3 +10,22 @@ do Rio de Janeiro, facilitando visualizar diferenças na forma como cada um est�
 
 ## Como rodar o crawler
 Estando na pasta "/data/crawler", execute "php generate.php" e o arquivo "/data/doacoes_geral.json" será atualizado.
+
+## Rodando a Aplicação:
+
+Instale as dependências com o Node:
+
+```sh
+$ npm i
+```
+
+Para rodar a aplicação:
+
+```sh
+$ npm start
+```
+
+Para fazer deploy:
+```sh
+$ npm deploy
+```
