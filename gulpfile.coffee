@@ -55,9 +55,12 @@ gulp.task 'partials', () ->
     "root": 'assets/js'
   ))
   .pipe(gulp.dest(destinations.js))
-  
+
   gulp.src(sources.data)
   .pipe(gulp.dest(destinations.data))
+
+  gulp.src('src/CNAME')
+  .pipe(gulp.dest('dist'))
 
 
 ###
