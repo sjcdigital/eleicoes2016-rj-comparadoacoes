@@ -8,11 +8,12 @@ sources =
   scss: 'src/assets/scss/**/*.scss'
   coffee: 'src/assets/coffee/**/*.coffee'
   html: 'src/assets/coffee/**/*.html'
+  data: 'data/candidatos_dados_processados.json'
 
 destinations =
   css: 'dist/assets/css'
   js: 'dist/assets/js'
-
+  data: 'dist/data'
 
 ###
   Compile SASS files
@@ -54,6 +55,9 @@ gulp.task 'partials', () ->
     "root": 'assets/js'
   ))
   .pipe(gulp.dest(destinations.js))
+  
+  gulp.src(sources.data)
+  .pipe(gulp.dest(destinations.data))
 
 
 ###
